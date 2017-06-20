@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Anton|Open+Sans+Condensed:300" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login User</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body id='welBod'>
+    <main>
+        <section>
+            <h1 class='login'>Login</h1>
+            <form class='login' action="/users/login" method="POST">
+                <label class='login' for="email">Email</label>
+                <br>
+                <input class='login' id="email" type="text" name="user[email]" placeholder="Username">
+                <br>
+                <label class='login' for="password">Password</label>
+                <br>
+                <input class='login' id="password" type="password" name="user[password]" placeholder="Enter Password">
+                <br>
+                <input class='login' type="submit" value="Login">
+            </form>
+            <div>
+                <a class='login' href="/users/new">Sign Up</a>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Anton|Open+Sans+Condensed:300" rel="stylesheet">
+    <title></title>
+</head>
+{{ #games.0 }}
+<a class='blogin' href="/games/saved/{{ user_id }}"> Wishlist </a> {{ /games.0 }}
+
+<body>
+    {{#games.0}}
+    <h5 class="welHead">  {{ name }} Edit comment field </h5>
+    <article><img src={{ image }} /></article>
+    <hr />
+    <form id='blogin' class="edit-game-form">
+        <label id='blogin'>Comments: </label>
+        <textarea id='comField' class="game-comments-input">
+            {{ comments }}
+        </textarea>
+        <br />
+        <input type="hidden" class="game-gid-input" value={{ gid }} />
+        <input type="hidden" class="game-name-input" value={{ name }} />
+        <input type="hidden" class="game-image-input" value={{ image }} />
+        <input type="hidden" class="game-release-input" value={{ release }} />
+        <input type="hidden" class="game-summary-input" value={{ summary }} />
+        <input type="hidden" class="game-id-input" value={{ id }} />
+        <button id='blogin' type="submit">Submit</button>
+    </form>
+    {{/games.0}}
+    <a id='blogin' href="/users/logout">Logout</a>
+</body>
+
+</html>

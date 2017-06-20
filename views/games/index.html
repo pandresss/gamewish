@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/css/style.css">
+  <script type="text/javascript" src="/js/jquery.js"></script>
+  <script type="text/javascript" src="/js/script.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Anton|Open+Sans+Condensed:300" rel="stylesheet">
+  <title></title>
+</head>
+
+<body>
+  </h3>
+  <h3 class="welHead"> Search for a GAME </h3>
+  <hr /> {{ #games.0 }}
+  <a class='login' href="games/saved/{{ user_id }}"> Wishlist </a> {{ /games.0 }}
+  <br/>
+  <a class='login' href="/users/logout">Logout</a>
+  </a>
+  <form class="gameSearch">
+    <label class="welHead"> Search by Name: </label>
+    <input class="nameInput" />
+    <br />
+    <br />
+    <button id="welHead" class="gameB" type="submit">Submit</button>
+  </form>
+  <article id="gamelist">
+  </article>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+/*font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Anton', sans-serif;
+font-family: 'Amatic SC', cursive;*/
+
+#welBod {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    /*background-color: #323232;*/
+}
+
+.welHead {
+    display: flex;
+    font-family: 'Anton', sans-serif;
+    color: #f28803;
+}
+
+.loginList {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.login {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #f28803;
+}
+
+.comField {
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+}
+
+#comField {
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+}
+
+#welHead {
+    display: flex;
+    font-family: 'Anton', sans-serif;
+    color: #f28803;
+}
+
+#login {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #f28803;
+}
+
+#blogin {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #191919;
+}
+
+.blogin {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #191919;
+}
